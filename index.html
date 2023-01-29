@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>My Responsive Website</title>
+        <title>Karyna Serheieva</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,8 @@
     <nav>
         <a class="links selected" href="#"> Home</a>
         <a class="links" href="#projects"> Projects</a>
-        <a class="links" href="#"> Contact Me</a>
-        <a class="links" href="#">More Info</a>
+        <a class="links" href="#contact"> Contact Me</a>
+      
         </nav>
 </div>
 
@@ -90,7 +90,7 @@
 </div>   
 
 <div class="video-player" id="VideoPlayer">
-    <video width="100%" id="myCurrentVideo">
+    <video width="100%" id="myCurrentVideo" type="video/mp4">
         <source src="mymedia/v3.mp4" type="video/mp4">
 
     </video>
@@ -98,30 +98,32 @@
 </div>
 
 
-<div class="Contactme">
-<h1>Contact me</h1>
-        <div class="container">
-            <h1>FormSubmit Demo</h1>
+<div  id="contact" class="Contactme">
+
+        <div class="container2">
+            <h1>Contact me</h1>
     <form class="row g-3" action="https://formsubmit.co/serheievak@gmail.com" method="POST">
-              <div class="form-group">
-                <div class="form-row">
-                  <div class="col">
-                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                  </div>
-                  <div class="col">
-                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-            </form>
-          </div>
+        
+        <input type="hidden" name="_next" value="https://karinaserheieva.github.io/my_website/success.html"
+
+         <label for="lname">Last Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="fname">Email</label>
+        <input type="text" id="fname" name="email" placeholder="Your email..">
+       
+    
+        <label for="subject">Your message</label>
+        <textarea id="subject" name="subject" placeholder="Describe your project.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
         
 
-    </form>
+
 
 </div>
 

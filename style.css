@@ -10,6 +10,7 @@ body {
 
 nav{
   position: fixed;
+  z-index: 100;
   top: 0;
   width: 100%;
   background-color: rgb(39, 39, 39);
@@ -49,6 +50,8 @@ nav{
 .container{
     width: 80%;
     margin: 80px auto;
+    position: relative;
+
 }
 
 .container h1{
@@ -56,6 +59,8 @@ nav{
     color:#fff; 
     font-size: 44px;
     text-align: center;
+
+    
 
 }
 
@@ -76,7 +81,7 @@ nav{
     margin: auto;
     position: relative;
     border-radius: 6px;
-    overflow: hidden;
+   /* overflow: hidden;*/
 }
 
 .img-small-row{
@@ -85,7 +90,9 @@ nav{
     margin: 20px 0;
     align-items: center;
     border-radius: 6px;
-    overflow: hidden;
+  /*  overflow: hidden;*/
+  
+  position: relative;
     width: 85%;
     
 }
@@ -129,6 +136,7 @@ nav{
 }
 
 video:focus{
+  
     outline: none;
 }
 
@@ -140,4 +148,36 @@ video:focus{
     cursor: pointer;
 
 
+}
+
+/*Frosm*/
+
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(136, 224, 199);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
 }
