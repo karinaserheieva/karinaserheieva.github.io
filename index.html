@@ -1,12 +1,139 @@
 <html>
-	<head>
-		<title>Пример: Мой Сайт</title>
-	</head>
-	<body>
-		<H1>Привет!</H1>
-		<P> Я Карина Сергеева</P>
-		<P> Это простейший пример HTML-документа. </P>
-		<img src="Rabbit.gif" alt="My cooooool picture"  width="250" />
-		<P> Этот *.html-файл может быть одновременно открыт и в Notepad, и в Netscape. Сохранив изменения в Notepad, просто нажмите кнопку Reload ('перезагрузить') в Netscape, чтобы увидеть эти изменения реализованными в HTML-документе. </P>
-	</body>
+    <head>
+        <title>My Responsive Website</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <nav>
+        <a class="links selected" href="#"> Home</a>
+        <a class="links" href="#projects"> Projects</a>
+        <a class="links" href="#"> Contact Me</a>
+        <a class="links" href="#">More Info</a>
+        </nav>
+</div>
+
+<div  id="home">
+
+    
+  <h2 align="center">Hello here,
+    I am Karyna Serheieva</h2>
+  <p align="center">motion designer </p>
+  <div  class="circle" ></div>
+  <p align="center"><img  align="center" src="photos/my_pic.png" height="300" alt="Karyna" align="right" 
+  vspace="0" hspace="0"> 
+</p>
+ 
+</div>
+
+
+
+</div>
+
+<div id="projects" class="container">
+    <H1>My projects gallery </H1>
+    <div class="row">
+        <div class="col">
+            <div class="feature-img">
+                <img src="mymedia/pic1.png" width="100%">
+                <img src="mymedia/play.png" class="play-btn" 
+                onclick="playVideo('mymedia/v1.mp4')">
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="img-small-row">
+                <div class="small-img">
+                    <img src="mymedia/pic2.png" >
+                <img src="mymedia/play.png" class="play-btn" 
+                onclick="playVideo('mymedia/v2.mp4')">
+                   
+                   
+                </div>
+                    <p>Video for kids <br>
+                    Ukrainian grammar
+                    </p>
+            </div>
+
+            <div class="img-small-row">
+                <div class="small-img">
+                    <img src="mymedia/pic3.png">
+                <img src="mymedia/play.png" class="play-btn" 
+                onclick="playVideo('mymedia/v3.mp4')">
+                    
+                </div>
+                    <p>Advertisement video</p>
+            </div>
+
+            <div class="img-small-row">
+                <div class="small-img">
+                    <img src="mymedia/pic4.png">
+                    <img src="mymedia/play.png" class="play-btn" 
+                    onclick="playVideo('mymedia/v4.mp4')">
+
+                </div>
+                    <p>Business cards</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+ 
+
+</div>   
+
+<div class="video-player" id="VideoPlayer">
+    <video width="100%" id="myCurrentVideo">
+        <source src="mymedia/v3.mp4" type="video/mp4">
+
+    </video>
+    <img src="mymedia/close.png" class="close-btn" onclick="stopVideo()">
+</div>
+
+
+<div class="Contactme">
+<h1>Contact me</h1>
+        <div class="container">
+            <h1>FormSubmit Demo</h1>
+    <form class="row g-3" action="https://formsubmit.co/serheievak@gmail.com" method="POST">
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                  </div>
+                  <div class="col">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </form>
+          </div>
+        
+
+    </form>
+
+</div>
+
+
+
+
+
+
+<script src="js.js"></script>
+
+</body>
 </html>
+
+
+
